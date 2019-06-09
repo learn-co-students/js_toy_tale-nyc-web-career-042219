@@ -80,31 +80,19 @@
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log(
-    "%c Easy Day",
-    "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)"
-  );
 
 
+  // MY CODE HERE
 
-  const addBtn = document.querySelector('#new-toy-btn')
-  const toyForm = document.querySelector('.container')
+
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log(
+      "%c Easy Day",
+      "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)"
+    );
+
+
   const toyCon = document.querySelector('#toy-collection')
-  let addToy = false
-
-  // YOUR CODE HERE
-
-  addBtn.addEventListener('click', () => {
-    // hide & seek with the form
-    addToy = !addToy
-    if (addToy) {
-      toyForm.style.display = 'block'
-      // submit listener here
-    } else {
-      toyForm.style.display = 'none'
-    }
-  })
 
 
   // render card for toy index
@@ -134,16 +122,18 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
+    //added event listener
 
-  //added event listener
+    document.querySelector("body").addEventListener("click", e=>{
+    e.preventDefault()
+    if (e.target.name === "submit")
+    newToyYo(e)
+    if (e.target.classList.value === "like-btn")
+    addLikeYo(e)
+    if (e.target.id === "new-toy-btn")
+    defaultFunktionDatWastesMemory()
+    })
 
-  document.querySelector("body").addEventListener("click", e=>{
-  e.preventDefault()
-  if (e.target.name === "submit")
-  newToyYo(e)
-  if (e.target.classList.value === "like-btn")
-  addLikeYo(e)
-})
 
 //add a new toy
 
@@ -203,7 +193,16 @@ function newToyYo(e){
   }
 
 
-
+  function defaultFunktionDatWastesMemory(){
+    const toyForm = document.querySelector('.container')
+    let addToy = false
+    addToy = !addToy
+    if (addToy) {
+      toyForm.style.display = 'block'
+    } else {
+      toyForm.style.display = 'none'
+    }
+  }
 
 
 
