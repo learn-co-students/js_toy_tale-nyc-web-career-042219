@@ -10,7 +10,7 @@
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 40
     },
     {
       "id": 3,
@@ -47,6 +47,24 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Big Boi Squeeks",
+      "image": "https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/1280x1280/products/307/4245/muscle__52045.1520090269.png?c=2&imbypass=on",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "That boi",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51rBuKmA6cL._SX425_.jpg",
+      "likes": 0,
+      "id": 11
+    },
+    {
+      "name": "that fast boi",
+      "image": "https://images.squarespace-cdn.com/content/v1/53208ff6e4b00fbb0f1c2d65/1550437698942-WH7ZAYF6YJHP20ZQDPRZ/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PICHnXC1b9smDvYLPdL-DS7U1pkhCtl83kemXd5r3C5ngKMshLAGzx4R3EDFOm1kBS/IMG_0330.JPG?format=1000w",
+      "likes": 0,
+      "id": 15
     }
   ]
 }
