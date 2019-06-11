@@ -4,7 +4,7 @@ You got a friend in need!
 Your friend Andy recently misplaced all their toys!
 
 Help Andy recover their toys and get the toys back in the toy collection.
-
+<!-- 
 ## STEP 1: Create your server!
 
 All of the toy data is stored in the db.json file. You'll want to access this data using a json server. In order to do this, run the following two commands:
@@ -12,15 +12,15 @@ All of the toy data is stored in the db.json file. You'll want to access this da
    * json-server --watch db.json
    
 ##### This will create a server storing all of our lost toy data with restful routes at http://localhost:3000/toys.
-You can also check out http://localhost:3000/toys/:id
+You can also check out http://localhost:3000/toys/:id -->
 
-## STEP 2: Fetch Andy's Toys!
+<!-- ## STEP 2: Fetch Andy's Toys!
 
 On the index.html page, there is a div with the id "toy-collection"
 
-When the page loads, make a 'GET' request to fetch all the toy objects. With the response data, make a `<div class="card">` for each toy and add it to the toy-collection div.
+When the page loads, make a 'GET' request to fetch all the toy objects. With the response data, make a `<div class="card">` for each toy and add it to the toy-collection div. -->
 
-## STEP 3: Add toy info to the card!
+<!-- ## STEP 3: Add toy info to the card!
 
 Each card should have the following child elements:
   * h2 tag with the toy's name
@@ -36,10 +36,10 @@ After all if that - the toy card should resemble:
     <img src=toy_image_url class="toy-avatar" />
     <p>4 Likes </p>
     <button class="like-btn">Like <3</button>
-  </div>
+  </div> -->
   ```
 
-## STEP 4: Add a new toy!
+<!-- ## STEP 4: Add a new toy!
 
 * When a user clicks on the add new toy button - a POST request is sent to http://localhost:3000/toys and the new toy is added to Andy's Toy Collection.
 * The toy should conditionally render to the page.
@@ -53,15 +53,15 @@ headers:
   Accept: "application/json"
 }
 
-body:
+body: //dont forget JSON.stringify(
 {
   "name": "Jessie",
   "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
   "likes": 0
-}
+})
 ```
 
-* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
+* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options). -->
 
 ## STEP 5: Increase toy's likes!
 
